@@ -20,16 +20,16 @@ import NavBar from '@/components/modules/NavBar/index.vue'
 .home{
   width: 100%;
   height: 100vh;
-  min-height: 1080px;
-  min-width: 1920px;
-  background: -webkit-linear-gradient(90deg, #fbeded,#f8e1e1,#f7d9d7);
-  background: linear-gradient(90deg, #fbeded,#f8e1e1,#f7d9d7);
+  background: $BGC_THEME;
+  //background: -webkit-linear-gradient(90deg, #fbeded,#f8e1e1,#f7d9d7);
+  //background: linear-gradient(90deg, #fbeded,#f8e1e1,#f7d9d7);
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
   .container{
-    width: 98%;
-    height: 98%;
+    width: 97%;
+    height: 97%;
     //background: $HOME_BG;
     border-radius: 50px;
     display: flex;
@@ -52,9 +52,9 @@ import NavBar from '@/components/modules/NavBar/index.vue'
     }
     .container-right{
       flex:1;
-      height: 95%;
-      margin: auto;
+      height: 98%;
       box-sizing: border-box;
+      overflow: hidden;
     }
   }
 }

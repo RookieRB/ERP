@@ -34,12 +34,16 @@ $HOVER_COLOR: #00BFFF;
     transform: translateX(-100%);
     opacity: 0;
   }
+  25%{
+    transform: translateX(20%);
+    opacity: 0.25;
+  }
   50%{
-    transform: translateX(10%);
+    transform: translateX(-20%);
     opacity: 0.5;
   }
   75%{
-    transform: translateX(-10%);
+    transform: translateX(10%);
     opacity: 0.75;
   }
   100%{
@@ -53,12 +57,16 @@ $HOVER_COLOR: #00BFFF;
     transform: translateX(80%);
     opacity: 0;
   }
-  50%{
+  25%{
     transform: translateX(-5%);
+    opacity: 0.25;
+  }
+  50%{
+    transform: translateX(5%);
     opacity: 0.5;
   }
   75%{
-    transform: translateX(10%);
+    transform: translateX(-2%);
     opacity: 0.75;
   }
   100%{

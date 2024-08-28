@@ -136,6 +136,7 @@ function getCurrentMonthInEnglish() {
       <div class="title">Calendar</div>
       <div class="calendar-bar">
         <VCalendar
+            class="myCalendar"
             title-position="left"
             borderless
             :color="selectedColor"
@@ -169,7 +170,7 @@ function getCurrentMonthInEnglish() {
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
-  padding: 0 20px;
+  padding: 10px 20px;
 
   .content-left {
     display: flex;
@@ -181,28 +182,27 @@ function getCurrentMonthInEnglish() {
     .content-left-left {
       width: 50%;
       height: 100%;
-
+      display: flex;
+      box-sizing: border-box;
+      flex-direction: column;
+      justify-content: space-around;
       .left-top {
-        flex: 1;
-
         h1 {
           font-size: 2.5rem;
           color: $HOME_NAV_FONT_COLOR;
         }
 
         p {
-          margin-top: 10px;
           font-size: 22px;
           color: $HOME_NAV_FONT_COLOR;
         }
       }
-
       .left-content-left-personInfoList {
         .personInfoList-top {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          margin-top: 50px;
+          margin-top: 10px;
           margin-bottom: 20px;
 
           .title {
@@ -223,14 +223,13 @@ function getCurrentMonthInEnglish() {
           gap: 50px;
         }
       }
-
       .left-content-left-taskInfoList {
-        width: 90%;
+        flex:1;
+
       }
     }
 
     .content-left-right {
-      flex:1;
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -246,7 +245,6 @@ function getCurrentMonthInEnglish() {
         }
 
         .icon-font {
-          margin: auto;
           box-sizing: border-box;
           padding: 15px;
           border-radius: 10px;
@@ -265,15 +263,15 @@ function getCurrentMonthInEnglish() {
       }
 
       .choose-date {
+        box-sizing: border-box;
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        margin-bottom: 10px;
+        padding-bottom: 10px;
         gap: 20px;
 
         .choosed {
-          background-color: #DCDCDC;
-          color: #1a1a1a;
+          background-color: $HOME_NAV_FONT_COLOR;
         }
 
         .choose-date-item {
@@ -285,11 +283,11 @@ function getCurrentMonthInEnglish() {
           width: 40px;
           border-radius: 10px;
           cursor: pointer;
-          color: rgb(200, 200, 200);
+          color: #fff;
 
           &:hover {
-            background-color: #DCDCDC;
-            color: #1a1a1a;
+            background-color: $HOME_NAV_FONT_COLOR;
+            font-weight: bold;
           }
         }
       }
@@ -298,21 +296,25 @@ function getCurrentMonthInEnglish() {
         height: 40%;
         display: flex;
         flex-wrap: wrap;
+        box-sizing: border-box;
         justify-content: space-between;
         animation: showFromTopToBottom 1.75s forwards;
 
         .showInfo-item {
           flex: 0 0 48%;
-          margin-bottom: 2%;
+          margin-bottom: 1vw;
         }
       }
 
       .income {
+        height: 100%;
         flex: 1;
-        padding: 30px;
+        box-sizing: border-box;
+        padding: 20px;
         border-radius: 30px;
         background-color: $HOME_NAV_BG;
         color: $HOME_NAV_FONT_COLOR;
+        margin-bottom: 20px;
         .chart {
           width: 100%;
           height: 100%;
@@ -328,7 +330,7 @@ function getCurrentMonthInEnglish() {
 
   .content-right {
     flex: 1;
-    padding: 40px;
+    padding: 1.5vw;
     box-sizing: border-box;
     background: $HOME_NAV_BG;
     border-radius: 30px;
@@ -339,40 +341,41 @@ function getCurrentMonthInEnglish() {
     .title {
       font-size: 30px;
       font-weight: 600;
-      margin-bottom: 20px;
+      margin-bottom: 0.7vw;
       color: $HOME_NAV_FONT_COLOR;
     }
 
     .calendar-bar {
-      width: 100%;
       box-sizing: border-box;
-      padding: 20px;
+      padding: 10px;
       box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .1);
       border-radius: 15px;
+      .myCalendar{
+
+      }
     }
 
     .time {
-      margin-top: 30px;
+      margin-top: 1vw;
       font-size: 23px;
       color: $HOME_NAV_FONT_COLOR;
     }
 
     .info-list {
-      padding-top: 2vh;
+      padding-top: 1vw;
+      box-sizing: border-box;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       width: 100%;
-      margin-top: 20px;
-      overflow: hidden;
     }
 
     .button {
       width: 100%;
       flex: 1;
       display: flex;
-      justify-content: end;
+      justify-content: center;
     }
   }
 }

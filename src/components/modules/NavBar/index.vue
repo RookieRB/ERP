@@ -92,6 +92,7 @@ import SunIcon from "@/components/icons/SunIcon.vue";
   justify-content: center;
   align-items: center;
   font-family: $FONT_FAMILY;
+
   .nav-top{
     display: flex;
     flex-direction: column;
@@ -108,6 +109,8 @@ import SunIcon from "@/components/icons/SunIcon.vue";
     .nav-logoName{
       font-size: 20px;
       font-weight: 300;
+      color: $HOME_NAV_FONT_COLOR;
+      font-weight: bold;
     }
   }
   .nav-list{
@@ -126,11 +129,12 @@ import SunIcon from "@/components/icons/SunIcon.vue";
 
         .list-item-icon{
           transform: scale(1.1) translateX(-30px);
+          opacity: 0;
         }
         .list-item-name{
-          transform:translateX(-45px);
+          transform:translateX(-33%);
           opacity: 1;
-          background-color: $HOME_BG;
+
         }
       }
       .list-item-icon{
@@ -140,18 +144,17 @@ import SunIcon from "@/components/icons/SunIcon.vue";
         position: absolute;
         transform: translateX(-120px);
         box-sizing: border-box;
-        width: 150px;
-        background-color: $HOME_BG;
+        width:100%;
         border-radius: 50px;
         display: flex;
         align-items: center;
-        justify-content: right;
+        justify-content: center;
         opacity: 0;
         padding: 20px;
         transition: 1s;
         white-space: nowrap;
         font-size: 20px;
-        color: $NAV_LEMONCHIFFON;
+        color: $HOME_NAV_FONT_COLOR;
       }
     }
   }
@@ -165,8 +168,8 @@ import SunIcon from "@/components/icons/SunIcon.vue";
     p{
       font-size: 20px;
       font-weight: 300;
-      color: rgb(200,200,200);
       margin-bottom: 25px;
+      color: $HOME_NAV_FONT_COLOR;
     }
     .nav-bottom-list{
       display: flex;
@@ -178,6 +181,7 @@ import SunIcon from "@/components/icons/SunIcon.vue";
       background-color: $HOME_BG;
       border-radius: 30px;
       .nav-list-item{
+
         .nav-bottom-list-icon{
           margin-top: 20px;
         }

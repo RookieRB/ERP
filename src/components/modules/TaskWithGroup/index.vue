@@ -13,10 +13,13 @@ import ShowInfoCardTaskWithGroup from "@/components/modules/InfoCard/ShowInfoCar
         <span class="description">项目介绍</span>
         <span class="status">当前状态</span>
       </div>
-      <ShowInfoCardTaskWithGroup></ShowInfoCardTaskWithGroup>
-      <ShowInfoCardTaskWithGroup></ShowInfoCardTaskWithGroup>
-      <ShowInfoCardTaskWithGroup></ShowInfoCardTaskWithGroup>
-      <ShowInfoCardTaskWithGroup></ShowInfoCardTaskWithGroup>
+      <div class="showInfoCardTaskWithGroup">
+        <ShowInfoCardTaskWithGroup></ShowInfoCardTaskWithGroup>
+        <ShowInfoCardTaskWithGroup></ShowInfoCardTaskWithGroup>
+        <ShowInfoCardTaskWithGroup></ShowInfoCardTaskWithGroup>
+        <ShowInfoCardTaskWithGroup></ShowInfoCardTaskWithGroup>
+      </div>
+
     </div>
   </div>
 </template>
@@ -29,20 +32,21 @@ import ShowInfoCardTaskWithGroup from "@/components/modules/InfoCard/ShowInfoCar
   .title{
     font-size: 28px;
     font-weight: bold;
-    margin-bottom: 20px;
     color: $HOME_NAV_FONT_COLOR;
+
   }
   .taskInfoList{
     display: flex;
+    flex-direction: column;
     width: 90%;
     min-width: 600px;
-    flex-direction: column;
+
     color: $HOME_NAV_FONT_COLOR;
     .introduce{
-      padding: 20px;
       display: flex;
       font-size: 20px;
-      gap: 60px;
+      gap: 65px;
+      margin-bottom: 10px;
       .taskName{
         white-space: nowrap;
       }
@@ -60,6 +64,13 @@ import ShowInfoCardTaskWithGroup from "@/components/modules/InfoCard/ShowInfoCar
       }
       .status{
         white-space: nowrap;
+      }
+    }
+    .showInfoCardTaskWithGroup{
+      width: 100%;
+      height: 100%;
+      &:last-child{
+        margin-bottom: 0;
       }
     }
   }

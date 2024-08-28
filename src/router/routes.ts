@@ -22,9 +22,9 @@ export const Routes:Array<RouteRecordRaw> = [
                 component: () => import('@/views/modules/Application/index.vue')
             },
             {
-                path: '/home/source',
+                path: '/home/resource',
                 name: '资源下载',
-                component: () => import('@/views/modules/Source/index.vue')
+                component: () => import('@/views/modules/Resource/index.vue')
             }
         ]
     },

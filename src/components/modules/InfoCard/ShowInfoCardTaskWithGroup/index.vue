@@ -62,7 +62,7 @@ defineProps({
   box-sizing: border-box;
   padding: 20px;
   background-color: $HOME_NAV_BG;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   cursor: pointer;
   transition: all 1s;
   gap: 20px;

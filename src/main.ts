@@ -15,7 +15,7 @@ import pinia from "./store";
 // 引入路由
 import router from './router';
 // 初始化css
-import 'normalize.css'
+import 'normalize.css/normalize.css'
 import 'element-plus/dist/index.css'
 //引入自定义插件对象：注册整个项目全局组件
 import globalComponent from '@/components/index.ts'

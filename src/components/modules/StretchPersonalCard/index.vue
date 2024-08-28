@@ -45,7 +45,7 @@ import MessageIcon from "@/components/icons/MessageIcon.vue";
 .personal-card{
   position: relative;
   width: 80px;
-  height: 270px;
+  height: 230px;
   border-radius: 30px;
   background:$HOME_NAV_BG;
   cursor: pointer;
@@ -84,7 +84,7 @@ import MessageIcon from "@/components/icons/MessageIcon.vue";
   }
   .stretch-content{
     padding-left: 20px;
-    height: 150px;
+    height: 130px;
     overflow: hidden;
     white-space: nowrap;
     opacity: 0;

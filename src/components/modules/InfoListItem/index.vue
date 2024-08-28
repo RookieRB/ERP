@@ -1,4 +1,4 @@
-<script setup lang="ts">
+  <script setup lang="ts">
 import {InfoListItemData} from "@/components/modules/InfoListItem/type.ts";
 defineProps({
   infoListItemData:{
@@ -43,7 +43,7 @@ defineProps({
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
-  margin-bottom: 3vh;
+  margin-bottom: 1vw;
   .img{
     width: 50px;
     height: 50px;
