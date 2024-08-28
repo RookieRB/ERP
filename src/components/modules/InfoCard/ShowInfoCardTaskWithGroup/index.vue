@@ -9,9 +9,9 @@ defineProps({
       taskDate: '2024-8-16',
       groupMember: [
           'https://www.keaitupian.cn/cjpic/frombd/0/253/2172411007/2786136231.jpg',
-          'https://th.bing.com/th/id/OIP.5NSM0Kb1mSR3J6K31nHiIgAAAA?rs=1&pid=ImgDetMain',
-          'https://th.bing.com/th/id/OIP.11przxGxcHIKgfNax3ju1AAAAA?rs=1&pid=ImgDetMain',
-          'https://th.bing.com/th/id/OIP.11przxGxcHIKgfNax3ju1AAAAA?rs=1&pid=ImgDetMain'
+          'https://tse1-mm.cn.bing.net/th/id/OIP-C.qCys2C8LjF8c3_UHbGOooAAAAA?rs=1&pid=ImgDetMain',
+          'https://tse1-mm.cn.bing.net/th/id/OIP-C.qCys2C8LjF8c3_UHbGOooAAAAA?rs=1&pid=ImgDetMain',
+          'https://tse1-mm.cn.bing.net/th/id/OIP-C.qCys2C8LjF8c3_UHbGOooAAAAA?rs=1&pid=ImgDetMain'
       ],
       taskDescription: '该项目用于开发网页',
       taskStatus: '1',

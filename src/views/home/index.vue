@@ -33,17 +33,17 @@ import NavBar from '@/components/modules/NavBar/index.vue'
     //background: $HOME_BG;
     border-radius: 50px;
     display: flex;
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10.5px);
-    -webkit-backdrop-filter: blur(10.5px);
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(26px);
+    -webkit-backdrop-filter: blur(26px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
     -webkit-box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
-    -webkit-border-radius: 25px;
+    -webkit-border-radius: 12px;
 
     .container-left{
-      height: 70%;
-      width: 140px;
+      height: 74%;
+      width: 120px;
       min-width: 100px;
       background-color: $HOME_NAV_BG;
       border-radius: 60px;

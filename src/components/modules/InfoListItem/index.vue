@@ -4,7 +4,7 @@ defineProps({
   infoListItemData:{
     type: Object as () => InfoListItemData,
     default:{
-      img: 'https://th.bing.com/th/id/OIP.mPGy-QSWMXym-J4zC_MJfwAAAA?rs=1&pid=ImgDetMain',
+      img: 'https://tse1-mm.cn.bing.net/th/id/OIP-C.qCys2C8LjF8c3_UHbGOooAAAAA?rs=1&pid=ImgDetMain',
       title: 'Interview',
       description: 'penny Porter',
       time: '9 AM'

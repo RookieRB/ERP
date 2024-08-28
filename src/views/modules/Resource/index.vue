@@ -2,6 +2,7 @@
 import MagnifyGlass from "@/components/icons/MagnifyGlass.vue";
 import NotificationIcon from "@/components/icons/NotificationIcon.vue";
 import ShowInfoCardWithList from '@/components/modules/InfoCard/ShowInfoCardWithList/index.vue'
+import ResourceInfoCard from '@/components/modules/InfoCard/ResourceInfoCard/index.vue'
 </script>
 
 <template>
@@ -45,9 +46,24 @@ import ShowInfoCardWithList from '@/components/modules/InfoCard/ShowInfoCardWith
         </div>
         <div class="topDownload">
           <ShowInfoCardWithList></ShowInfoCardWithList>
-
         </div>
       </div>
+    </div>
+    <div class="sourceContent-mainBody-bottom">
+      <template v-for="item in 12">
+        <div class="resourceInfoCardItem">
+          <ResourceInfoCard></ResourceInfoCard>
+        </div>
+      </template>
+    </div>
+    <div class="changePage">
+      <el-pagination
+          :page-size="20"
+          :pager-count="11"
+          layout="prev, pager, next"
+          :total="1000"
+          size="large"
+      />
     </div>
   </div>
 </div>
@@ -60,7 +76,9 @@ import ShowInfoCardWithList from '@/components/modules/InfoCard/ShowInfoCardWith
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  padding-top: 20px;
   padding-right: 50px;
+  overflow: auto;
   .sourceContent-top{
     display: flex;
     flex-direction: row;
@@ -161,6 +179,21 @@ import ShowInfoCardWithList from '@/components/modules/InfoCard/ShowInfoCardWith
 
         }
       }
+    }
+    .sourceContent-mainBody-bottom{
+      margin-top: 2vw;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      .resourceInfoCardItem{
+        flex: 0 0 22%;
+        margin-top: 1vw;
+      }
+    }
+    .changePage{
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
     }
   }
 }
