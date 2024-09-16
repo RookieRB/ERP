@@ -18,5 +18,8 @@ defineProps({
 </template>
 
 <style scoped lang="scss">
-
+.calendar{
+  width: 100%;
+  height: 100%;
+}
 </style>

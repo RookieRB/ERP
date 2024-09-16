@@ -43,9 +43,8 @@ import DownloadIcon from "@/components/icons/DownloadIcon.vue";
 .content {
   width: 100%;
   height: 100%;
-  background: $HOME_BG;
+  background: #fff;
   display: flex;
-
   flex-direction: column;
   border-radius: 15px;
   cursor: pointer;

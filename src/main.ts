@@ -19,6 +19,8 @@ import 'normalize.css/normalize.css'
 import 'element-plus/dist/index.css'
 //引入自定义插件对象：注册整个项目全局组件
 import globalComponent from '@/components/index.ts'
+// 引入animate组件库
+import 'animate.css'
 
 const app = createApp(App)
 app.use(pinia)
@@ -29,4 +31,5 @@ app.use(ElementPlus,{
     locale: zhCn,
 })
 app.component('ECharts',ECharts)
+
 app.mount('#app')

@@ -1,4 +1,5 @@
 import {RouteRecordRaw} from "vue-router";
+import {commonRoutes} from "./commonRoutes.ts";
 
 export const Routes:Array<RouteRecordRaw> = [
     {
@@ -30,7 +31,13 @@ export const Routes:Array<RouteRecordRaw> = [
     },
     {
         path:'/',
-        redirect:'/login',
+        redirect:'/user',
+    },
+    {
+        path: '/user',
+        name: '首页',
+        component: ()  => import('@/views/user/index.vue'),
+        children: commonRoutes
     }
 
 ]

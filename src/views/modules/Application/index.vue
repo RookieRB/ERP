@@ -267,11 +267,12 @@ function getCurrentMonthInEnglish() {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        padding-bottom: 10px;
+        padding: 10px 10px;
         gap: 20px;
 
         .choosed {
-          background-color: $HOME_NAV_FONT_COLOR;
+          background-color: $HOME_FONT_COLOR_SHALLOW_WHITE;
+          color: #fff !important;
         }
 
         .choose-date-item {
@@ -283,10 +284,11 @@ function getCurrentMonthInEnglish() {
           width: 40px;
           border-radius: 10px;
           cursor: pointer;
-          color: #fff;
+          color: $HOME_FONT_COLOR_DEEP_DARK;
 
           &:hover {
-            background-color: $HOME_NAV_FONT_COLOR;
+            background-color: $HOME_FONT_COLOR_SHALLOW_WHITE;
+            color: #fff;
             font-weight: bold;
           }
         }

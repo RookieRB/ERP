@@ -7,7 +7,7 @@ const props = defineProps({
   cardInfoData:{
     type: Object as () => CardInfoData,
     default: () => ({
-      title: 'Application',
+      title: '订单数量',
       eventNumber: '2500',
       color: 'blue',
       isIncrement: true,
@@ -63,11 +63,12 @@ const ringStyle = computed(() => {
   display: flex;
   flex-direction: row;
   cursor: pointer;
+  box-shadow: 0 0 2px 2px rgba(0,0,0,.05);
   transition: transform .5s;
   animation: showFromTopToBottom 1.75s backwards   ease-in-out;
   &:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 2px 2px rgba(0,0,0,.1);
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
   }
   .content-left{
     flex:1;

@@ -103,13 +103,17 @@
 .content{
   width: 100%;
   height: 100%;
+
   .card {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    background-color: $HOME_BG;
+    background-color: $NAV_BG_COLOR;
     border-radius: 15px;
     z-index: 1;
+    &:hover{
+      box-shadow: $BOX_SHADOW;
+    }
     .tools {
       display: flex;
       flex-direction: row;

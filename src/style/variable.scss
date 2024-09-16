@@ -1,88 +1,141 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
-$BGC_THEME:linear-gradient(to bottom right,#EAD6EE,#A0F1EA);
-$FONT_FAMILY:'Poppins', sans-serif;
-$HOME_NAV_BG: rgb(255,250,255);
-$HOME_BG: rgb(243,243,243);
-$HOME_NAV_FONT_COLOR: rgb(21,41,97);
+
+$BGC_THEME: linear-gradient(to bottom right, #EAD6EE, #A0F1EA);
+$FONT_FAMILY: 'Poppins', sans-serif;
+$HOME_BG_COLOR: rgb(244, 244, 244);
+$NAV_BG_COLOR: rgb(253, 254, 251);
+$HOME_NAV_BG: rgb(255, 255, 255);
+$HOME_FONT_COLOR_DEEP_DARK: #262424;
+$HOME_FONT_COLOR_SHALLOW_WHITE: #b9babf;
+$HOME_BG_COLOR_SHALLOW_GREEN: #e6f3e7;
+$HOME_BG: rgb(243, 243, 243);
+$HOME_NAV_FONT_COLOR: rgb(21, 41, 97);
+$NAV_BAR_V2_BG_COLOR: #f6f6f6;
 $NAV_LEMONCHIFFON: #1C1C1C;
-$FONT_COLOR_Light_GRAY:rgb(200,200,200);
+$FONT_COLOR_Light_GRAY: rgb(200, 200, 200);
 $HOVER_COLOR: #00BFFF;
-$BOX_SHADOW: 0 0 4px 4px rgba(0,0,0,.14);
+$BOX_SHADOW: 0 0 4px 4px rgba(0, 0, 0, .1);
+$SUCCESS_BG_COLOR: #e2f4e7;
+$SUCCESS_FONT_COLOR: #01be6c;
+$UNCOMPLETE_BG_COLOR: #FF6347;
+$UNCOMPLETE_FONT_COLOR: #FF0000;
+$WARMING_BG_COLOR: #FFA500;
+$WARMING_FONT_COLOR: #f8bc33;
+%card-style {
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(18.5px);
+  -webkit-backdrop-filter: blur(18.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+  -webkit-box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+}
+
 // 左右晃动
 @keyframes shake {
-  0%{
+  0% {
     transform: rotate(0);
   }
-  25%{
+  25% {
     transform: rotate(-15deg);
   }
-  50%{
+  50% {
     transform: rotate(0);
   }
-  75%{
+  75% {
     transform: rotate(15deg);
   }
-  100%{
+  100% {
     transform: rotate(0);
   }
 }
+
 // 从左往右出现
-@keyframes showFromLeftToRight{
-  0%{
+@keyframes showFromLeftToRight {
+  0% {
     transform: translateX(-100%);
     opacity: 0;
   }
-  25%{
+  25% {
     transform: translateX(20%);
     opacity: 0.25;
   }
-  50%{
+  50% {
     transform: translateX(-20%);
     opacity: 0.5;
   }
-  75%{
+  75% {
     transform: translateX(10%);
     opacity: 0.75;
   }
-  100%{
+  100% {
     transform: translateX(0);
     opacity: 1;
   }
 }
+
 // 从右往左出现
-@keyframes showFromRightToLeft{
-  0%{
+@keyframes showFromRightToLeft {
+  0% {
     transform: translateX(80%);
     opacity: 0;
   }
-  25%{
+  25% {
     transform: translateX(-5%);
     opacity: 0.25;
   }
-  50%{
+  50% {
     transform: translateX(5%);
     opacity: 0.5;
   }
-  75%{
+  75% {
     transform: translateX(-2%);
     opacity: 0.75;
   }
-  100%{
+  100% {
     transform: translateX(0);
     opacity: 1;
   }
 }
+
 // 从上往下出现
 @keyframes showFromTopToBottom {
-  from{
+  from {
     transform: translateY(-100%);
     opacity: 0;
   }
-  to{
+  to {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+// 跳动
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+// 收缩
+@keyframes shrink {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
     opacity: 1;
   }
 }
