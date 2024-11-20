@@ -51,6 +51,7 @@ import Notifications from '@/views/user/modules/dashboard/workbench/modules/Noti
       gap: 20px;
       .content-statistics{
         width: 45%;
+
       }
       .content-notifications{
         flex:1;

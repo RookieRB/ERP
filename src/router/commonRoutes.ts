@@ -30,5 +30,11 @@ export const commonRoutes:Array<RouteRecordRaw> = [
         component: () => import('@/views/user/modules/application/user/index.vue'),
         name: '用户管理',
         path: '/application/user'
+    },
+    {
+        component: () => import('@/views/user/modules/resources/classResources/index.vue'),
+        name: '课程资源',
+        path: '/resources/class'
     }
+
 ]

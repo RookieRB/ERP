@@ -11,6 +11,8 @@ import ShoppingIcon from "@/components/icons/ShoppingIcon.vue";
 import BuyIcon from "@/components/icons/BuyIcon.vue";
 import CompanyManagementIcon from "@/components/icons/CompanyManagementIcon.vue";
 import BookResourcesIcon from "@/components/icons/BookResourcesIcon.vue";
+import VideoIcon from "../components/icons/VideoIcon.vue";
+import MeidaIcon from "../components/icons/MeidaIcon.vue";
 
 export const navBarMock = [
     {
@@ -76,6 +78,13 @@ export const navBarMock = [
     },
     {
         icon: BookResourcesIcon,
-        name: '课程资源模块'
+        name: '课程资源模块',
+        children:[
+            {
+                icon: MeidaIcon,
+                name: '课程资源',
+                path: '/resources/class'
+            }
+        ]
     }
 ]

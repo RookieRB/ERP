@@ -10,7 +10,7 @@ import WenZhouIcon from "../components/icons/WenZhouIcon.vue";
 
 export const analysisMockDataArray:Array<InfoCardData> = [
     {
-        title: 'SALES REVENUE',
+        title: '总收入',
         number: '$7145.56',
         isAdd: false,
         percentNumber: '0,10%',

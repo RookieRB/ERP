@@ -89,6 +89,7 @@ const changeSwitchButtonClickHandler = () => {
 <style scoped lang="scss">
 .statistics{
   @extend %card-style;
+  height: 100%;
   .top{
     display: flex;
     .title{

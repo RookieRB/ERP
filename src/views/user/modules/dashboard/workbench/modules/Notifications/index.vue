@@ -37,7 +37,7 @@ const changePageClickHandler = (index)=>{
   <div class="notifications">
     <div class="top">
       <div class="title">
-        Notifications
+        我发布过的资源记录
       </div>
       <div class="switch-button" @click="changeSwitchClickHandler">
         <div class="switch" ref="switchRef"></div>

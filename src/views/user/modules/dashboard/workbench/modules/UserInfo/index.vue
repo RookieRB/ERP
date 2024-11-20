@@ -91,8 +91,8 @@ import CalendarIcon from "@/components/icons/CalendarIcon.vue";
     flex-direction: column;
     align-items: center;
     .user-img{
-      height: 170px;
-      width: 170px;
+      height: 140px;
+      width: 140px;
       transform: translateY(-20px);
       img{
         width: 100%;
